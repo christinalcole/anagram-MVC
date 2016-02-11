@@ -1,0 +1,94 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+
+/* Anagram app CSS styles start here */
+
+body {
+  background:#f8f8f8 url("images/tiles-03.png");
+  font-family:"montserrat",arial;
+  font-size:100%;
+}
+
+p {
+  color:black;
+}
+
+h1 {
+  color:#ff325f;
+  font-size:3.75em;
+  text-align:center;
+  margin: 50px 150px; 
+}
+
+.form {
+  margin: 50px 450px;
+}
+
+.btn {
+  background:#ff325f;
+  color: white;
+  font-size:2.5em;
+  margins: 25px;
+}
+
+.arrow {
+  background: #f8f8f8 url("images/arrow.png") no-repeat; 
+  height: 200px;
+  float: right;
+  width: 635px;
+}
+
+li {
+ font-family: inherit;
+ font-size: 2.0em;
+ color: #ff325f;
+ text-align: center;
+ list-style-type: none;
+ clear: both;
+}
