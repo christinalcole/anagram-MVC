@@ -5,20 +5,28 @@ def self.find_anagram(word)
   letters = word.split(//)
 
   # Creates array to store anagrams of word
-  anagram_array = []
+  possible_combos = []
 
   # Loops through array of letters, letter-by-letter
   letters.each do |letter|
     # Selects the remaining characters
     remaining = letters.select { |l| l != letter}
 
-    # Creates an anagram by combining the letter and the remaining characters, then adds to anagram array
-    anagram_array << letter + remaining.join('')
+    # Creates an anagram by combining the letter and the remaining characters, then adds to array of possible anagrams
+    possible_combos << letter + remaining.join('')
 
-   # Creates a new anagram by combining the letter and the reverse of the remaining characters, then adds to anagram array
-    anagram_array << letter + reverse_letters(remaining).join('')
+   # Creates a new anagram by combining the letter and the reverse of the remaining characters, then adds to array of possible combos
+    possible_combos << letter + reverse_letters(remaining).join('')
 end
  
+  # Checks array of possible combinations against app dictionary of words, then adds only combos that are actually words to final anagram array
+  anagram_array = []
+  possible_combos.each do |combo|
+    if Word.find_by_text(combo).present?
+	anagram_array << combo
+    end
+  end
+
   # Returns anagram array
   anagram_array
 
