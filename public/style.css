@@ -92,3 +92,11 @@ li {
  list-style-type: none;
  clear: both;
 }
+
+.error {
+  background:#ffff33;
+  color: #330033;
+  font-family:"lora", times new roman; 
+  font-size:1.5em;
+  text-align: center;
+}
